@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<style>
+    *{
+    padding:0;
+    margin:0;
+    /* background-color: black; */
+    box-sizing: border-box;
+    font-family: Helvetica,Arial, Helvetica, sans-serif;
+}
+    body{
+        background-color: black;
+        color:white
+        }
+       
+        .movies-category{
+    /* color:white;
+    padding: auto;
+    display: inline-block;
+    flex-direction: row;  */
+    /* display: inline-flex
+    overflow-x:auto;
+    overflow-y: hidden; */
+    margin-left: 50px;
+    
+ }
+ .item-category{
+    display:inline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   object-fit: contain;
+   width: 245px;
+   position: relative;
+     /* display: inline-block;
+     flex-direction: row;
+     
+     object-fit: contain;
+     align-items: center; */
+ }
+ .item-category img{
+ padding:2px;
+ width:200px;
+ padding:10px;
+ }
+ .item-category img:hover{
+  transform: scale(1.3);
+  transition: transform ease 1000ms;
+ }
+
+
+ .form-container{
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+ }
+ #myForm{
+    font-size: large;
+    color:red;
+    margin-top:50px;
+ }
+ #category{
+    width:100px;
+    height:40px;
+    color:red;
+ }
+ .btn{
+    width:80px;
+    height:40px;
+    color:red;
+    border-radius: 20px solid blue;
+    
+ }
+ .btn:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+ }
+</style>
+<body>
+    <div class="form-contianer">
+        <center>
+            
+        <form id="myForm">
+           <h1><label for="Mood">Choose a Mood:</label></h1>
+           <br>
+            <select name="category" id="category">
+              <option value="Serious Movies">Serious</option>
+              <option value="Angry Movies">Angry</option>
+              <option value="Happy Movies">Happy</option>
+              <option value="Romantic Movies">Romantic</option>
+              <option value="Excitement Movies">Excitement</option>
+              <option value="Aventures Movies">Adventures</option>
+            </select>
+            <br><br>
+            <input class="btn" type="submit" value="Submit">
+          </form>
+        </center>
+    </div>
+    <div id="category-cont">    
+        <!-- <div class="movies-category">
+        <h1 style="color:white">Trending Movies</h1>
+       
+        <div class="item-category">
+         <img src="https://image.tmdb.org/t/p/original/xGIeqQunSj5dxGZVKzNNr9W4vps.jpg" alt="" srcset=""> <img src="https://image.tmdb.org/t/p/original/xGIeqQunSj5dxGZVKzNNr9W4vps.jpg" alt="" srcset=""> <img src="https://image.tmdb.org/t/p/original/xGIeqQunSj5dxGZVKzNNr9W4vps.jpg" alt="" srcset=""> <img src="https://image.tmdb.org/t/p/original/xGIeqQunSj5dxGZVKzNNr9W4vps.jpg" alt="" srcset=""> <img src="https://image.tmdb.org/t/p/original/xGIeqQunSj5dxGZVKzNNr9W4vps.jpg" alt="" srcset=""> 
+           </div>
+        </div> -->
+     </div>
+</body>
+<script src="script.js" defer></script>
+</html>

@@ -1,0 +1,277 @@
+*{
+    padding:0;
+    margin:0;
+    /* background-color: black; */
+    box-sizing: border-box;
+    font-family: Helvetica,Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+#header{
+    /* background-color: grey; */
+    width: 100%;
+    max-width: 1212px;
+    margin: 0 auto;
+}
+
+
+
+.header-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left-nav, .right-nav{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.right-nav svg, .right-nav img{
+    margin-right: 22px;
+}
+.icon{
+    max-width:100px;
+    max-height:200px;
+}
+.main-nav{
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    /* display: none; */
+}
+.nav-item{
+    color:white;
+    margin-right: 20px;
+    color: #e5e5e5;
+    opacity: .81;
+}
+.nav-item.active{
+    color:white;
+    opacity:1;
+    font-weight: 500px;
+}
+.right-nav svg{
+    color: white;
+}
+.right-nav img{
+    max-width:30px;
+}
+
+.banner-section{
+    background-size: cover;
+    width: 100%;
+    height:85vh;
+    color:white;
+}
+
+.banner-content{
+  font-weight: 900;
+  Position:absolute;
+  margin-top:250px;
+  display:flex;
+  flex-direction: column;
+  margin-left:100px;
+  line-height: 1.3;
+}
+.banner-heading{
+    
+}
+
+.banner-release{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.banner-button{
+   
+    display:flex;
+    flex-direction: row;
+    /* padding: auto; */
+}
+.btn-primary{
+     width:100px;
+    height:30px; 
+}
+.btn-secondary{
+    width:100px;
+    height:30px;
+    margin-left: 10px;
+}
+
+
+.movies-trending{
+    /* color:white;
+    padding: auto;
+    display: inline-block;
+    flex-direction: row;  */
+    display: -ms-inline-flexbox;
+    overflow-x:auto;
+    overflow-y: hidden
+    
+ }
+ .item-trending{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   object-fit: contain;
+   width: 245px;
+   position: relative;
+     /* display: inline-block;
+     flex-direction: row;
+     
+     object-fit: contain;
+     align-items: center; */
+ }
+ .item-trending img{
+ padding:2px;
+ width:200px;
+ }
+ .item-trending img:hover{
+  transform: scale(1.3);
+  transition: transform ease 1000ms;
+ }
+
+
+
+
+ .tv-trending{
+    /* color:white;
+    padding: auto;
+    display: inline-block;
+    flex-direction: row;  */
+    display: -ms-inline-flexbox;
+    overflow-x:auto;
+    overflow-y: hidden
+    
+ }
+ .item-tv{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   object-fit: contain;
+   width: 245px;
+   position: relative;
+     /* display: inline-block;
+     flex-direction: row;
+     
+     object-fit: contain;
+     align-items: center; */
+ }
+ .item-tv img{
+ padding:2px;
+ width:200px;
+ }
+ .item-tv img:hover{
+  transform: scale(1.3);
+  transition: transform ease 1000ms;
+ }
+
+
+.row-container{
+   color:white;
+   padding: auto;
+   
+   /* display: inline-block;
+   flex-direction: row; */
+   /* display: flex;
+   flex-direction: row;
+   align-items: center;
+   flex-wrap: nowrap;
+  */
+   display: -ms-inline-flexbox;
+   overflow-x:auto;
+   overflow-y: hidden
+    
+}
+.item{
+/*  
+    flex-direction: row;
+    
+  
+    align-items: center; 
+    object-fit: contain;
+    margin-right: 6px;
+    border-radius: 4px;
+     */
+     display:flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+    object-fit: contain;
+    width: 245px;
+    position: relative;
+
+    
+
+}
+.item img{
+padding:2px;
+/* width:200px; */
+width: inherit;
+}
+.item img:hover{
+ transform: scale(1.3);
+ transition: transform ease 1000ms;
+}
+
+/* model Css */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: black;
+    color:antiquewhite;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    overflow: scroll;
+    height:50%;
+    text-align: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* Responsive CSS */
+@media screen and (max-width: 420px){
+    .main-nav{
+        display:none;
+    }
+    .banner-section{
+        background-size: cover;
+        width: 100vw;
+        height:50vhl;
+        object-fit: contain;
+        color:white;
+    }
+   
+}
